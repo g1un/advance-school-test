@@ -1,0 +1,32 @@
+/*lessons*/
+.lessons {
+  padding: 50px 35px 30px;
+
+  box-sizing: border-box;
+
+  background: #969799;
+
+  font-family: Scada-Bold, sans-serif;
+  font-size: 24px;
+  line-height: 1.2em;
+  color: #fff;
+  text-align: center;
+
+  &__list {
+    margin: 0 0 35px;
+
+    display: flex;
+
+    li {
+      width: 25%;
+      box-sizing: border-box;
+
+      border-right: 1px solid #fff;
+
+      &:last-child {
+        border-right: none;
+      }
+    }
+  }
+}
+/*/lessons*/

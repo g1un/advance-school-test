@@ -1,0 +1,122 @@
+/*lessons-item*/
+.lessons-item {
+  padding: 110px 30px 100px;
+
+  font-family: Scada-Bold, sans-serif;
+  color: #fff;
+  text-align: center;
+
+  position: relative;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%;
+
+    margin-left: -75px;
+  }
+
+  &:first-child {
+
+    &::before {
+      @include sprite($flag-uk);
+    }
+  }
+
+  &:nth-child(2) {
+
+    &::before {
+      @include sprite($flag-de);
+    }
+  }
+
+  &:nth-child(3) {
+
+    &::before {
+      @include sprite($flag-fr);
+    }
+  }
+
+  &:last-child {
+
+    &::before {
+      @include sprite($flag-it);
+    }
+  }
+
+  &__title {
+    margin: 0 0 35px;
+    
+    font-size: 24px;
+    line-height: 1.2em;
+    text-transform: uppercase;
+  }
+
+  &__date {
+    font-size: 24px;
+    line-height: 1.2em;
+    color: #ffce12;
+
+    span {
+      display: block;
+
+      font-size: 30px;
+      text-transform: uppercase;
+    }
+  }
+  
+  &__level {
+    margin: 0 0 25px;
+
+    font-size: 24px;
+    line-height: 1.2em;
+
+    span {
+      display: block;
+    }
+  }
+
+  &__result {
+
+    h4 {
+      font-size: 24px;
+      line-height: 1.2em;
+      color: #ffce12;
+      text-transform: uppercase;
+    }
+
+    p {
+      font-size: 18px;
+      line-height: 1.2em;
+    }
+  }
+
+  &__link {
+    position: absolute;
+    bottom: 0;
+    left: 15px;
+    right: 15px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    height: 75px;
+    box-sizing: border-box;
+
+    border: 1px solid #fff;
+    background: #ffce12;
+
+    font-size: 24px;
+    line-height: 1.2em;
+    color: #353535;
+    text-transform: uppercase;
+    text-decoration: none;
+
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
+}
+/*/lessons-item*/
